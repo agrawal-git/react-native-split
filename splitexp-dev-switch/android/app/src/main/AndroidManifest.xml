@@ -1,12 +1,5 @@
-<!--开发构建配置-->
-<!--manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.splitexp"
-    android:versionCode="1"
-    android:versionName="1.0"-->
-
-<!--生产构建配置-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example"
+    package="com.splitexp"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -17,7 +10,8 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="22" />
 
-    <application
+    <!--开发时配置，支持热更新-->
+    <!--application
       android:name=".MainApplication"
       android:allowBackup="true"
       android:label="@string/app_name"
@@ -32,7 +26,28 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-      </activity>
+      </activity-->
+
+    <!--发布前构建配置-->
+    <application
+        android:name="com.publish.MainApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.publish.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.publish.SampleAActivity"/>
+        <activity android:name="com.publish.SampleBActivity"/>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 

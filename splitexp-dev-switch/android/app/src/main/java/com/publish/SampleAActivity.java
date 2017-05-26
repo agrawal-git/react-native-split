@@ -1,4 +1,4 @@
-package com.example;
+package com.publish;
 
 public class SampleAActivity extends BaseSubBundleActivity {
 

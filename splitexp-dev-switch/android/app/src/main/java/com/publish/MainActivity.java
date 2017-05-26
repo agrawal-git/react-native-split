@@ -1,4 +1,4 @@
-package com.example;
+package com.publish;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.bridge.ReactContext;
+import com.splitexp.R;
 
 public class MainActivity extends Activity {
 

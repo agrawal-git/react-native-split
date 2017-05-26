@@ -1,4 +1,4 @@
-package com.example;
+package com.publish;
 
 import android.content.Context;
 import android.content.res.AssetManager;

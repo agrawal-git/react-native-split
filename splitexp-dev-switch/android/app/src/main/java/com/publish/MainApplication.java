@@ -1,4 +1,4 @@
-package com.example;
+package com.publish;
 
 import android.app.Application;
 

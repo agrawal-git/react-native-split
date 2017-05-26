@@ -20,7 +20,7 @@ class SampleA extends React.Component {
         <Image
           style={styles.image}
           source={require('../../assets/naruto.jpeg')}/>
-        <Text>This is SampleA</Text>
+        <Text>This is SampleA hot load  111</Text>
       </View>
     );
   }
