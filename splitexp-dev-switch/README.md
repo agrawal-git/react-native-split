@@ -36,3 +36,15 @@ export default SampleA;
  android:name="com.publish.MainApplication"
  android:name="com.publish.MainActivity"
 ````
+---------
+
+## 验证修改配置后，同一个子包拆包结果基本一致
+删除拆分a包配置后的拆分结果，与之前拆分结果一致，base/index.bundle.js略有差异，但是相互替换，可正常运行
+````
+  "custom": [ {
+    "name": "sample_b",
+    "index": "./src/components/packageb/SampleB.js"
+  }]
+````
+<image src="./res/bundlebc.png"/>
+
