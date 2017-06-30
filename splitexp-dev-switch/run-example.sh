@@ -2,7 +2,7 @@
 #发布前构建配置,jeemuu
 
 mkdir build
-node ../index.js --platform android --output build --config .splitconfig --dev false
+node ./splitppk.js --platform android --output build --config .splitconfig --dev false
 
 mkdir -p android/app/src/main/assets/bundle
 rm -rf android/app/src/main/assets/bundle/*
